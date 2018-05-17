@@ -4,34 +4,41 @@
   "private": true,
   "dependencies": {
     "@types/react-redux": "^6.0.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
-    "react-scripts-ts": "2.15.1",
     "react-router-dom": "^4.2.2",
-    "redux-saga": "^1.0.0-beta.1",
-    "redux": "^4.0.0"
+    "react-scripts-ts": "2.15.1",
+    "redux": "^4.0.0",
+    "redux-saga": "^1.0.0-beta.1"
   },
   "scripts": {
     "start": "react-scripts-ts start",
+    "precommit": "lint-staged",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
+  },
+
   "devDependencies": {
-    "prettier": "^1.12.1",
     "@types/enzyme": "^3.1.10",
     "@types/enzyme-adapter-react-16": "^1.0.2",
     "@types/jest": "^22.2.3",
     "@types/node": "^10.0.6",
     "@types/react": "^16.3.14",
-    "@types/react-router-dom": "^4.2.6",
     "@types/react-dom": "^16.0.5",
+    "@types/react-router-dom": "^4.2.6",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.4.3",
     "jest-cli": "^22.4.3",
     "jest-config": "^22.4.3",
+    "prettier": "^1.12.1",
     "typescript": "^2.8.3"
   }
 }
