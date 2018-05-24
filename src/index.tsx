@@ -1,34 +1,17 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { applyMiddleware, createStore } from "redux";
-import { enthusiasm } from "./reducers/index";
+import reducer from "./reducers";
 import { Provider } from "react-redux";
 import createSagaMiddleware from "redux-saga";
 import RoterDom from "./router/RouterDom";
 import rootSaga from "./saga";
 import "./index.css";
 const sagaMiddleware = createSagaMiddleware();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const defaultState = { article: [] };
 const store = createStore(
-  enthusiasm,
-  {
-    enthusiasmLevel: 5,
-    languageName: "TypeScript"
-  },
+  reducer,
+  defaultState,
   applyMiddleware(sagaMiddleware)
 );
 sagaMiddleware.run(rootSaga);

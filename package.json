@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/react-redux": "^6.0.0",
+    "antd": "^3.5.2",
     "husky": "^0.14.3",
     "lint-staged": "^7.1.0",
     "react": "^16.3.2",
@@ -12,19 +13,23 @@
     "react-router-dom": "^4.2.2",
     "react-scripts-ts": "2.15.1",
     "redux": "^4.0.0",
-    "redux-saga": "^1.0.0-beta.1"
+    "redux-saga": "^1.0.0-beta.1",
+    "whatwg-fetch": "^2.0.4"
   },
   "scripts": {
-    "start": "react-scripts-ts start",
+    "start": "react-app-rewired start --scripts-version react-scripts-ts",
     "precommit": "lint-staged",
-    "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
+    "build": "react-app-rewired build --scripts-version react-scripts-ts",
+    "test":
+      "react-app-rewired test --env=jsdom --scripts-version react-scripts-ts",
     "eject": "react-scripts-ts eject"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
+    "src/**/*.{js,jsx,json,css,less}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   },
-
   "devDependencies": {
     "@types/enzyme": "^3.1.10",
     "@types/enzyme-adapter-react-16": "^1.0.2",
@@ -39,6 +44,9 @@
     "jest-cli": "^22.4.3",
     "jest-config": "^22.4.3",
     "prettier": "^1.12.1",
+    "react-app-rewired": "^1.5.2",
+    "ts-import-plugin": "^1.4.4",
+    "react-app-rewire-less":"^2.1.1",
     "typescript": "^2.8.3"
   }
 }

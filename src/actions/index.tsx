@@ -1,23 +1,26 @@
-import { INCREMENT_ENTHUSIASM, DECREMENT_ENTHUSIASM } from "../constants";
+import {
+  REQUEST_ARTICLE,
+  RECEIVE_ARTICLE,
+  REQUEST_INFO,
+  RECEIVE_INFO
+} from "../constants";
 
-export interface IncrementEnthusiasm {
-  type: INCREMENT_ENTHUSIASM;
+// blog article action
+export interface IRequestArticle {
+  type: REQUEST_ARTICLE;
 }
-
-export interface DecrementEnthusiasm {
-  type: DECREMENT_ENTHUSIASM;
+export interface IReceiveArticle {
+  type: RECEIVE_ARTICLE;
+  article: Array<object>;
 }
+export type ArticleAction = IRequestArticle | IReceiveArticle;
 
-export type EnthusiasmAction = IncrementEnthusiasm | DecrementEnthusiasm;
-
-export function incrementEnthusiasm(): IncrementEnthusiasm {
-  return {
-    type: INCREMENT_ENTHUSIASM
-  };
+//blog info action
+export interface IRequestInfo {
+  type: REQUEST_INFO;
 }
-
-export function decrementEnthusiasm(): DecrementEnthusiasm {
-  return {
-    type: DECREMENT_ENTHUSIASM
-  };
+export interface IReceiveInfo {
+  type: RECEIVE_INFO;
+  info: object;
 }
+export type InfoAction = IRequestInfo | IReceiveInfo;
