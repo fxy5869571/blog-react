@@ -1,17 +1,32 @@
-import { REQUEST_INFO } from "../constants";
-import { connect, Dispatch } from "react-redux";
-import App from "../components/App/App";
-interface IInfo {
-  info: object;
+import { connect, Dispatch } from 'react-redux'
+import { REQUEST_INFO } from '../constants'
+
+import App from '../components/App/App'
+interface ITitle {
+  title: string
 }
-const mapStateToProps = (state: IInfo): object => {
-  return {
-    info: state.info
-  };
-};
+interface IArticles {
+  articles: ITitle[]
+}
+interface IInfo {
+  info: object
+  articles: IArticles
+}
+
+const mapStateToProps = ({ articles, info }: IInfo): object => {
+  if (articles.articles) {
+    return {
+      articleTitle: articles.articles.map(item => item.title),
+      info
+    }
+  }
+  return { info }
+}
 
 export const mapDispatchToProps = (dispatch: Dispatch) => {
-  return { requestInfo: dispatch({ type: REQUEST_INFO }) };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+  return { actions: dispatch({ type: REQUEST_INFO }) }
+}
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App)

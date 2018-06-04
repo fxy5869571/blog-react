@@ -1,26 +1,43 @@
 import {
-  REQUEST_ARTICLE,
   RECEIVE_ARTICLE,
-  REQUEST_INFO,
-  RECEIVE_INFO
-} from "../constants";
+  RECEIVE_ARTICLES,
+  RECEIVE_INFO,
+  REQUEST_ARTICLE,
+  REQUEST_ARTICLES,
+  REQUEST_INFO
+} from '../constants'
 
-// blog article action
-export interface IRequestArticle {
-  type: REQUEST_ARTICLE;
+// blog articles action
+export interface IRequestArticles {
+  type: REQUEST_ARTICLES
+  pageIndex: number
+  pageSize: number
 }
-export interface IReceiveArticle {
-  type: RECEIVE_ARTICLE;
-  article: Array<object>;
+export interface IReceiveArticles {
+  type: RECEIVE_ARTICLES
+  pageIndex: number
+  pageSize: number
+  total: number
+  articles: object[]
 }
-export type ArticleAction = IRequestArticle | IReceiveArticle;
+export type ArticlesAction = IRequestArticles | IReceiveArticles
 
-//blog info action
 export interface IRequestInfo {
-  type: REQUEST_INFO;
+  type: REQUEST_INFO
 }
 export interface IReceiveInfo {
-  type: RECEIVE_INFO;
-  info: object;
+  type: RECEIVE_INFO
+  info: object
 }
-export type InfoAction = IRequestInfo | IReceiveInfo;
+export type InfoAction = IRequestInfo | IReceiveInfo
+
+export interface IRequestArticle {
+  type: REQUEST_ARTICLE
+  Id: string
+}
+export interface IReceiveArticle {
+  type: RECEIVE_ARTICLE
+  Id: string
+  article: object[]
+}
+export type ArticleAction = IRequestArticle | IReceiveArticle

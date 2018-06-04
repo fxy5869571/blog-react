@@ -1,13 +1,13 @@
-import { ArticleAction } from "../actions";
-import { RECEIVE_ARTICLE, REQUEST_ARTICLE } from "../constants";
-const article = (state: Array<any> = [], action: ArticleAction): object => {
+import { ArticleAction } from '../actions'
+import { RECEIVE_ARTICLE, REQUEST_ARTICLE } from '../constants'
+const article = (state: object = {}, action: ArticleAction): object => {
   switch (action.type) {
     case REQUEST_ARTICLE:
-      return state;
+      return state
     case RECEIVE_ARTICLE:
-      return [...state, ...action.article];
+      return action.article
     default:
-      return state;
+      return state
   }
-};
-export default article;
+}
+export default article

@@ -1,43 +1,38 @@
-import * as React from "react";
-import { Layout, Row, Col } from "antd";
-import "./style.less";
-const { Header, Footer, Content } = Layout;
-interface IInfo {
-  info: object;
-}
-class App extends React.Component<IInfo> {
-  render() {
-    console.log(this.props);
-    return (
-      <div className="App">
+import { Col, Layout, Row } from 'antd'
+import * as React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+import RouterMap from '../../router/RouterMap'
+import Header from '../Layout/Header/Header'
+import Sidebar from '../Layout/Sidebar/Sidebar'
+import './style.less'
+
+const { Footer, Content } = Layout
+
+const App = (props: any): any => {
+  const { info, articleTitle } = props
+  return (
+    <Router>
+      <Layout>
+        <Header />
         <Layout>
-          <Header>
-            <Col span={6} />
-            <Col span={12}>
-              <div className="header-logo">
-                <div>
-                  <span>Ma</span>
-                  <span>cro</span>
-                </div>
-                <span>我想去天堂，但我不想死</span>
-              </div>
-            </Col>
-            <Col span={6} />
-          </Header>
-          <Layout>
-            <Content>
-              <Row>
-                <Col span={6} />
-                <Col span={12}>222</Col>
-                <Col span={6}>333</Col>
-              </Row>
-            </Content>
-          </Layout>
-          <Footer>Footer</Footer>
+          <Content>
+            <Row>
+              <Col span={5} />
+              <Col span={14}>
+                <Row>
+                  <Col span={16}>
+                    <RouterMap />
+                  </Col>
+                  <Sidebar info={info} articleTitle={articleTitle} />
+                </Row>
+              </Col>
+            </Row>
+          </Content>
         </Layout>
-      </div>
-    );
-  }
+        <Footer>Footer</Footer>
+      </Layout>
+    </Router>
+  )
 }
 
-export default App;
+export default App
