@@ -6,46 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d319f240-abec-45c6-8651-3d6ac1fe67dd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/tslint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Article/Article.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Article/style.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Articles/Articles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Articles/style.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/Header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/Header/style.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/Sidebar/Sidebar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/Sidebar/style.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Articles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/articles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/RouterMap.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/saga/articles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-overrides.js" beforeDir="false" afterPath="$PROJECT_DIR$/config-overrides.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Article.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Article.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/article.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/RouterDom.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saga/article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/saga/article.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saga/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/saga/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saga/info.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/saga/info.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,100 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Articles.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Articles/Articles.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1144">
-              <caret line="56" column="30" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Articles/style.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name=".prettierrc.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.prettierrc.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/index.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#139#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/index.tsx">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="App.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/App/App.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Articles.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/Articles.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -301,7 +169,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/.ssh/known_hosts" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.prettier" value="C:/Program Files/nodejs/node" />
@@ -402,27 +270,27 @@
       <workItem from="1527982857348" duration="5752000" />
       <workItem from="1528026530980" duration="5345000" />
       <workItem from="1528120376001" duration="86000" />
-      <workItem from="1528120709766" duration="1099000" />
+      <workItem from="1528120709766" duration="1831000" />
+      <workItem from="1528126815719" duration="1730000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86964000" />
+    <option name="totallyTimeSpent" value="89426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info id="npm" order="2" sideWeight="0.5174292" side_tool="true" weight="0.24626866" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32388222" />
+      <window_info id="npm" order="2" sideWeight="0.5174292" side_tool="true" weight="0.24626866" />
       <window_info anchor="right" id="Mongo Explorer" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3293348" />
       <window_info anchor="bottom" id="RNConsole" order="8" />
       <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48200655" visible="true" weight="0.24626866" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48200655" visible="true" weight="0.24626866" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -448,16 +316,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Article/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="409" lean-forward="true" selection-start-line="409" selection-end-line="409" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/highlight.js/styles/atelier-estuary-dark.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/highlight.js/styles/atelier-dune-light.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -662,8 +520,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App/App.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="220">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -688,8 +546,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        <state relative-caret-position="506">
+          <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.ssh/id_rsa.pub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" lean-forward="true" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.ssh/known_hosts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
