@@ -1,9 +1,13 @@
 import 'whatwg-fetch'
 
 export const api = 'http://localhost:8000'
-export const fetchArticles = (pageIndex: number, pageSize: number) => {
+export const fetchArticles = (
+  pageIndex: number,
+  pageSize: number,
+  timeFile: boolean = false
+) => {
   return fetch(
-    `${api}/articles?pageIndex=${pageIndex}&pageSize=${pageSize}`
+    `${api}/articles?pageIndex=${pageIndex}&pageSize=${pageSize}&timeFile=${timeFile}`
   ).then(response => response.json())
 }
 export const fetchInfo = () => {
