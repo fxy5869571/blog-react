@@ -66,6 +66,14 @@ const Sidebar = (props: IProps) => {
           ))}
         </div>
       </Card>
+      <Card title="云标签" hoverable={true} className="card">
+        {tag &&
+          tag.map(item => (
+            <Tag key={item.title} color={item.color} className="tag">
+              {item.title}
+            </Tag>
+          ))}
+      </Card>
       <Card title="文章列表" hoverable={true} className="card">
         <ul>
           {articleTitle &&
@@ -75,14 +83,6 @@ const Sidebar = (props: IProps) => {
               </li>
             ))}
         </ul>
-      </Card>
-      <Card title="云标签" hoverable={true} className="card">
-        {tag &&
-          tag.map(item => (
-            <Tag key={item.title} color={item.color} className="tag">
-              {item.title}
-            </Tag>
-          ))}
       </Card>
     </Col>
   )

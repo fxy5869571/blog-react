@@ -6,11 +6,11 @@ import './style.less'
 const { Header } = Layout
 const HeaderDom = () => {
   const headerTitle = [
-    { title: '主页', icon: { __html: '&#xe600;' } },
-    { title: '文章', icon: { __html: '&#xe643;' } },
-    { title: '归档', icon: { __html: '&#xe660;' } },
-    { title: '慢生活', icon: { __html: '&#xe6a1;' } },
-    { title: '简历', icon: { __html: '&#xe60e;' } }
+    { title: '主页', icon: { __html: '&#xe600;' }, link: '/' },
+    { title: '文章', icon: { __html: '&#xe643;' }, link: '/' },
+    { title: '归档', icon: { __html: '&#xe660;' }, link: '/time-file' },
+    { title: '慢生活', icon: { __html: '&#xe6a1;' }, link: '/' },
+    { title: '简历', icon: { __html: '&#xe60e;' }, link: '/' }
   ]
   return (
     <div className="header">
@@ -34,7 +34,7 @@ const HeaderDom = () => {
         <Col span={14}>
           {headerTitle.map(item => (
             <div key={item.title} className="header-title-item">
-              <Link to="article">
+              <Link to={item.link}>
                 <span
                   className="iconfont"
                   style={{ marginRight: 5 }}

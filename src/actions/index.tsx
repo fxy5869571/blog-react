@@ -6,22 +6,22 @@ import {
   REQUEST_ARTICLES,
   REQUEST_INFO
 } from '../constants'
+import { IPayload } from '../types'
 
 // blog articles action
 export interface IRequestArticles {
   type: REQUEST_ARTICLES
-  pageIndex: number
-  pageSize: number
+  payload: IPayload
 }
 export interface IReceiveArticles {
   type: RECEIVE_ARTICLES
-  pageIndex: number
-  pageSize: number
+  payload: IPayload
   total: number
   articles: object[]
 }
 export type ArticlesAction = IRequestArticles | IReceiveArticles
 
+// blog info action
 export interface IRequestInfo {
   type: REQUEST_INFO
 }
@@ -31,6 +31,7 @@ export interface IReceiveInfo {
 }
 export type InfoAction = IRequestInfo | IReceiveInfo
 
+// blog article action
 export interface IRequestArticle {
   type: REQUEST_ARTICLE
   Id: string

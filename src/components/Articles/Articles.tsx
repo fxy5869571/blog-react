@@ -1,6 +1,7 @@
 import { Card, Pagination } from 'antd'
 import * as React from 'react'
 import { format } from '../../common'
+import { IPayload } from '../../types'
 
 import './style.less'
 interface IArticle {
@@ -19,7 +20,7 @@ interface IArticles {
   articles: IArticle[]
   history: IHistory
   total: number
-  fetchArticle: (pageIndex: number, pageSize: number) => void
+  fetchArticle: (payload: IPayload) => void
 }
 class Articles extends React.Component<IArticles> {
   public state = {
@@ -36,13 +37,12 @@ class Articles extends React.Component<IArticles> {
         pageSize
       },
       () => {
-        this.props.fetchArticle(page, pageSize)
+        this.props.fetchArticle(this.state)
       }
     )
   }
   public componentDidMount() {
-    const { pageIndex, pageSize } = this.state
-    this.props.fetchArticle(pageIndex, pageSize)
+    this.props.fetchArticle(this.state)
   }
   public render() {
     const { articles = [], total } = this.props

@@ -1,3 +1,8 @@
 export interface IStoreState {
-  article: object;
+  article: object
+}
+export interface IPayload {
+  pageIndex: number
+  pageSize: number
+  timeFile?: boolean
 }
