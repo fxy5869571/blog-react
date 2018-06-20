@@ -7,7 +7,7 @@ interface ITag {
   title: string
   color: string
 }
-interface IInfo {
+export interface IInfo {
   classList: string[]
   tag: ITag[]
   ArticleNum: string
@@ -17,7 +17,7 @@ interface IInfo {
   name: string
   authorImg: string
 }
-interface IProps {
+export interface IProps {
   info: IInfo
   articleTitle: string[]
 }

@@ -6,4 +6,6 @@ export const fetchArticles = (payLoad: IPayload) =>
 
 export const fetchInfo = () => blogFetch('/info')
 
+export const fetchResume = () => blogFetch('/resume')
+
 export const fetchArticle = (Id: string) => blogFetch('/article', { Id })

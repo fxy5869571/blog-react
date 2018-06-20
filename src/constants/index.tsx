@@ -15,3 +15,9 @@ export const REQUEST_ARTICLE = 'REQUEST_ARTICLE'
 export type REQUEST_ARTICLE = typeof REQUEST_ARTICLE
 export const RECEIVE_ARTICLE = 'RECEIVE_ARTICLE'
 export type RECEIVE_ARTICLE = typeof RECEIVE_ARTICLE
+
+// blog resume const
+export const REQUEST_RESUME = 'REQUEST_RESUME'
+export type REQUEST_RESUME = typeof REQUEST_RESUME
+export const RECEIVE_RESUME = 'RECEIVE_RESUME'
+export type RECEIVE_RESUME = typeof RECEIVE_RESUME

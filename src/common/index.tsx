@@ -51,7 +51,5 @@ export const blogFetch = (
       method
     }
   }
-  return fetch(url, initObj)
-    .then(response => response.json())
-    .then(response => response)
+  return fetch(url, initObj).then(response => response.json())
 }

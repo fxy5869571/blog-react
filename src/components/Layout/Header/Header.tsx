@@ -10,7 +10,7 @@ const HeaderDom = () => {
     { title: '文章', icon: { __html: '&#xe643;' }, link: '/' },
     { title: '归档', icon: { __html: '&#xe660;' }, link: '/time-file' },
     { title: '慢生活', icon: { __html: '&#xe6a1;' }, link: '/' },
-    { title: '简历', icon: { __html: '&#xe60e;' }, link: '/' }
+    { title: '简历', icon: { __html: '&#xe60e;' }, link: '/resume' }
   ]
   return (
     <div className="header">

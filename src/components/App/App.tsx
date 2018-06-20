@@ -1,17 +1,25 @@
 import { Col, Layout, Row } from 'antd'
 import * as React from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
-import RouterMap from '../../router/RouterMap'
+import { ReactHTML } from 'react'
 import Header from '../Layout/Header/Header'
-import Sidebar from '../Layout/Sidebar/Sidebar'
+import Sidebar, { IInfo } from '../Layout/Sidebar/Sidebar'
 import './style.less'
 
 const { Footer, Content } = Layout
-
-const App = (props: any): any => {
-  const { info, articleTitle } = props
-  return (
-    <Router>
+interface ILocation {
+  pathname: string
+}
+interface IProps {
+  info: IInfo
+  articleTitle: string[]
+  children: ReactHTML
+  location: ILocation
+}
+class App extends React.Component<IProps> {
+  public render() {
+    const { info, articleTitle, children, location } = this.props
+    const isResume = location.pathname === '/resume'
+    return !isResume ? (
       <Layout>
         <Header />
         <Layout>
@@ -20,9 +28,7 @@ const App = (props: any): any => {
               <Col span={5} />
               <Col span={14}>
                 <Row>
-                  <Col span={16}>
-                    <RouterMap />
-                  </Col>
+                  <Col span={16}>{children}</Col>
                   <Sidebar info={info} articleTitle={articleTitle} />
                 </Row>
               </Col>
@@ -31,8 +37,10 @@ const App = (props: any): any => {
         </Layout>
         <Footer>Footer</Footer>
       </Layout>
-    </Router>
-  )
+    ) : (
+      <div>{children}</div>
+    )
+  }
 }
 
 export default App

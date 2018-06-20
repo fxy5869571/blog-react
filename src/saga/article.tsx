@@ -7,6 +7,7 @@ function* yieldArticle(action: ArticleAction) {
   const article = yield call(fetchArticle, action.Id)
   yield put({ type: RECEIVE_ARTICLE, article })
 }
+
 export function* watchYieldArticle() {
   yield takeEvery(REQUEST_ARTICLE, yieldArticle)
 }
