@@ -45,7 +45,7 @@ class Articles extends React.Component<IArticles> {
     this.props.fetchArticle(this.state)
   }
   public render() {
-    const { articles = [], total } = this.props
+    const { articles = [], total, history } = this.props
     const { pageIndex, pageSize } = this.state
     return (
       <>
@@ -63,7 +63,7 @@ class Articles extends React.Component<IArticles> {
                 修改时间：{format(item.updated_at)}
               </span>
             ]}>
-            <div onClick={this.goArticle.bind(this, item._id)}>
+            <div onClick={() => history.push(`/article/${item._id}`)}>
               <h2>{item.title}</h2>
               <p>
                 <span key={item.access} style={{ marginRight: 20 }}>
