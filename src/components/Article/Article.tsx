@@ -1,6 +1,4 @@
 import { Card } from 'antd'
-import * as hljs from 'highlight.js'
-import * as marked from 'marked'
 import * as React from 'react'
 import './style.less'
 interface IArticle {
@@ -27,12 +25,6 @@ class Article extends React.Component<IProps> {
   constructor(props: IProps) {
     super(props)
   }
-  public componentWillMount() {
-    marked.setOptions({
-      highlight: code => hljs.highlightAuto(code).value,
-      renderer: new marked.Renderer()
-    })
-  }
   public componentDidMount() {
     this.props.fetchArticle(this.props.match.params.Id)
   }
@@ -57,7 +49,7 @@ class Article extends React.Component<IProps> {
         <div
           className="dark"
           dangerouslySetInnerHTML={{
-            __html: marked(content)
+            __html: content
           }}
         />
       </Card>

@@ -5,31 +5,19 @@ import App from '../containers/App'
 import loading from './loading'
 const RouterList: any[] = [
   {
-    component: Loadable({
-      loader: () => import('../containers/Articles'),
-      loading
-    }),
+    component: () => import('../containers/Articles'),
     path: '/'
   },
   {
-    component: Loadable({
-      loader: () => import('../containers/Article'),
-      loading
-    }),
+    component: () => import('../containers/Article'),
     path: '/article/:Id'
   },
   {
-    component: Loadable({
-      loader: () => import('../containers/Resume'),
-      loading
-    }),
+    component: () => import('../containers/Resume'),
     path: '/resume'
   },
   {
-    component: Loadable({
-      loader: () => import('../containers/TimeFile'),
-      loading
-    }),
+    component: () => import('../containers/TimeFile'),
     path: '/time-file'
   }
 ]
@@ -38,7 +26,14 @@ const RouterMap = () => (
     <App>
       <Switch>
         {RouterList.map(item => (
-          <Route exact={true} path={item.path} component={item.component} />
+          <Route
+            exact={true}
+            path={item.path}
+            component={Loadable({
+              loader: item.component,
+              loading
+            })}
+          />
         ))}
       </Switch>
     </App>
