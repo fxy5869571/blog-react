@@ -1,7 +1,9 @@
 import { Card, Tag } from 'antd'
 import * as React from 'react'
 import { Link } from 'react-router-dom'
+import { headerImg } from '../../../common'
 import './style.less'
+
 const { Meta } = Card
 interface ITag {
   title: string
@@ -27,12 +29,7 @@ const Sidebar = (props: IProps) => {
   const gitList = [0, 90, 180, 270]
   return (
     <div className="Sidebar">
-      <Card
-        hoverable={true}
-        className="card"
-        cover={
-          <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527245834290&di=2286cc7354adc925f79b92b719162dd4&imgtype=0&src=http%3A%2F%2Fpic32.photophoto.cn%2F20140828%2F0005018403917054_b.jpg" />
-        }>
+      <Card hoverable={true} className="card" cover={<img src={headerImg} />}>
         <div className="authorImg">
           <img src={authorImg} alt="" />
         </div>
