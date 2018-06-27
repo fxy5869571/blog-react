@@ -27,6 +27,7 @@ const RouterMap = () => (
       <Switch>
         {RouterList.map(item => (
           <Route
+            key={item.path}
             exact={true}
             path={item.path}
             component={Loadable({

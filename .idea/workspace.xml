@@ -8,18 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d319f240-abec-45c6-8651-3d6ac1fe67dd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Resume/style.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/loading.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/src.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Article/Article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Article.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Header/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Header/style.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Sidebar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Sidebar/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Sidebar/style.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/RouterMap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/RouterMap.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,29 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Article.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Article/Article.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" selection-start-column="27" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RouterMap.tsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RouterMap.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/router/RouterMap.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            <state relative-caret-position="574">
+              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -66,56 +43,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loading.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/router/loading.tsx">
+      <file leaf-file-name="Header.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Layout/Header/Header.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="babel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/react-loadable/lib/babel.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="babel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/react-loadable/babel.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/react-loadable/lib/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="254" column="17" selection-start-line="254" selection-start-column="9" selection-end-line="254" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@types/react-loadable/index.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="193" column="27" selection-start-line="193" selection-start-column="13" selection-end-line="193" selection-end-column="27" />
+            <state relative-caret-position="387">
+              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tsconfig.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Layout/Header/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+            <state relative-caret-position="624">
+              <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/App/App.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="28" column="68" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="28" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sidebar.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Layout/Sidebar/Sidebar.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="28" column="27" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#696#1563#0" />
+                <element signature="e#1570#1952#0" />
+                <element signature="e#1959#2199#0" />
+                <element signature="e#2206#2504#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Layout/Sidebar/style.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="52" selection-start-line="52" selection-end-line="56" selection-end-column="1" />
+              <folding>
+                <element signature="e#8#900#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,6 +119,9 @@
       <find>withRouter</find>
       <find>ReactD</find>
       <find>Loadable</find>
+      <find>header-logo</find>
+      <find>header-footer</find>
+      <find>header-title-item</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,8 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Article/Articles.tsx" />
-        <option value="$PROJECT_DIR$/src/reducers/Articles.tsx" />
         <option value="$PROJECT_DIR$/src/containers/ArticleDeil.tsx" />
         <option value="$PROJECT_DIR$/src/reducers/article.tsx" />
         <option value="$PROJECT_DIR$/config-overrides.js" />
@@ -172,17 +154,14 @@
         <option value="$PROJECT_DIR$/src/services/index.tsx" />
         <option value="$PROJECT_DIR$/src/saga/resume.tsx" />
         <option value="$PROJECT_DIR$/src/saga/index.tsx" />
-        <option value="$PROJECT_DIR$/src/components/Layout/Header/Header.tsx" />
         <option value="$PROJECT_DIR$/src/saga/article.tsx" />
         <option value="$PROJECT_DIR$/src/common/index.tsx" />
         <option value="$PROJECT_DIR$/src/containers/Resume.tsx" />
-        <option value="$PROJECT_DIR$/src/components/Layout/Sidebar/Sidebar.tsx" />
         <option value="$PROJECT_DIR$/src/reducers/info.tsx" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/src/index.tsx" />
         <option value="$PROJECT_DIR$/src/containers/App.tsx" />
         <option value="$PROJECT_DIR$/src/reducers/resume.tsx" />
-        <option value="$PROJECT_DIR$/src/components/App/App.tsx" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/Resume/index.less" />
         <option value="$PROJECT_DIR$/src/components/TimeFile/TimeFile.tsx" />
@@ -197,7 +176,12 @@
         <option value="$PROJECT_DIR$/src/router/dynamic.jsx" />
         <option value="$PROJECT_DIR$/src/router/dynamic .tsx" />
         <option value="$PROJECT_DIR$/src/router/Loading.tsx" />
+        <option value="$PROJECT_DIR$/src/components/Layout/Sidebar/Sidebar.tsx" />
         <option value="$PROJECT_DIR$/src/router/RouterMap.tsx" />
+        <option value="$PROJECT_DIR$/src/components/App/App.tsx" />
+        <option value="$PROJECT_DIR$/src/components/Layout/Sidebar/style.less" />
+        <option value="$PROJECT_DIR$/src/components/Layout/Header/Header.tsx" />
+        <option value="$PROJECT_DIR$/src/components/Layout/Header/style.less" />
       </list>
     </option>
   </component>
@@ -256,7 +240,23 @@
               <item name="blog-react" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog-react" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Layout" type="462c0819:PsiDirectoryNode" />
+              <item name="Header" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog-react" type="b2602c69:ProjectViewProjectNode" />
@@ -390,7 +390,7 @@
       <workItem from="1529736219965" duration="2000" />
       <workItem from="1530084462374" duration="1705000" />
       <workItem from="1530086927800" duration="828000" />
-      <workItem from="1530088411220" duration="3366000" />
+      <workItem from="1530088411220" duration="7028000" />
     </task>
     <task id="LOCAL-00001" summary="规范变量名">
       <created>1528903787362</created>
@@ -420,24 +420,31 @@
       <option name="project" value="LOCAL" />
       <updated>1530091553763</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加代码按路由分割功能">
+      <created>1530091847912</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1530091847912</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140277000" />
+    <option name="totallyTimeSpent" value="143939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47982553" visible="true" weight="0.24077977" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47982553" visible="true" weight="0.24077977" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3293348" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32388222" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info id="npm" order="2" sideWeight="0.5201745" side_tool="true" visible="true" weight="0.24077977" />
+      <window_info id="npm" order="2" sideWeight="0.5201745" side_tool="true" weight="0.24077977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3293348" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39803708" />
@@ -468,18 +475,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Layout/Header/Header.tsx</url>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/react-router-dom/package.json" />
-    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/_util/type.d.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/@types/react-router-dom/index.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
@@ -502,13 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Layout/Sidebar/Sidebar.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts" />
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -528,13 +520,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/redux-saga/es/internal/io.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/redux-saga/es/internal/proc.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/redux-saga/es/internal/utils.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/App/App.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/saga/articles.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -640,16 +625,6 @@
     <entry file="file://$PROJECT_DIR$/src/.idea/modules.xml" />
     <entry file="file://$PROJECT_DIR$/src/.idea/src.iml" />
     <entry file="file://$PROJECT_DIR$/src/.idea/workspace.xml" />
-    <entry file="file://$PROJECT_DIR$/src/components/Layout/Header/Header.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -738,13 +713,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/App.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="68" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="28" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Layout/Sidebar/Sidebar.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#696#1563#0" />
+            <element signature="e#1570#1952#0" />
+            <element signature="e#1959#2199#0" />
+            <element signature="e#2206#2504#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Layout/Sidebar/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="52" selection-start-line="52" selection-end-line="56" selection-end-column="1" />
+          <folding>
+            <element signature="e#8#900#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Layout/Header/Header.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/router/RouterMap.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="574">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Layout/Header/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
         </state>
       </provider>
     </entry>

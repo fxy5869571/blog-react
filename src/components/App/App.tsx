@@ -25,11 +25,21 @@ class App extends React.Component<IProps> {
         <Layout>
           <Content>
             <Row>
-              <Col span={5} />
-              <Col span={14}>
+              <Col xs={1} sm={1} md={1} lg={1} xl={3} xxl={5} />
+              <Col xs={22} sm={22} md={22} lg={20} xl={18} xxl={14}>
                 <Row>
-                  <Col span={16}>{children}</Col>
-                  <Sidebar info={info} articleTitle={articleTitle} />
+                  <Col xs={24} sm={24} md={24} lg={17} xl={17} xxl={17}>
+                    {children}
+                  </Col>
+                  <Col
+                    xs={24}
+                    sm={24}
+                    md={24}
+                    lg={{ span: 6, offset: 1 }}
+                    xl={{ span: 6, offset: 1 }}
+                    xxl={{ span: 6, offset: 1 }}>
+                    <Sidebar info={info} articleTitle={articleTitle} />
+                  </Col>
                 </Row>
               </Col>
             </Row>

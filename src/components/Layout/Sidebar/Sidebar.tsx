@@ -1,4 +1,4 @@
-import { Card, Col, Tag } from 'antd'
+import { Card, Tag } from 'antd'
 import * as React from 'react'
 import { Link } from 'react-router-dom'
 import './style.less'
@@ -26,7 +26,7 @@ const Sidebar = (props: IProps) => {
   const { tag, github, present, click, ArticleNum, name, authorImg } = info
   const gitList = [0, 90, 180, 270]
   return (
-    <Col span={6} className="Sidebar" offset={1}>
+    <div className="Sidebar">
       <Card
         hoverable={true}
         className="card"
@@ -84,7 +84,7 @@ const Sidebar = (props: IProps) => {
             ))}
         </ul>
       </Card>
-    </Col>
+    </div>
   )
 }
 
