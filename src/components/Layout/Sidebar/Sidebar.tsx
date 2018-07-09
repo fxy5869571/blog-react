@@ -56,7 +56,7 @@ const Sidebar = (props: IProps) => {
           {gitList.map(item => (
             <div
               key={item}
-              className="iconfont icon-git"
+              className="icon-font icon-git"
               style={{ transform: `rotate(${item}deg)` }}>
               <a href={github}> &#xea0a;</a>
             </div>

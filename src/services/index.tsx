@@ -2,10 +2,10 @@ import 'whatwg-fetch'
 import { blogFetch } from '../common'
 import { IPayload } from '../types'
 export const fetchArticles = (payLoad: IPayload) =>
-  blogFetch('/articles', payLoad)
+  blogFetch('/get-articles', payLoad)
 
-export const fetchInfo = () => blogFetch('/info')
+export const fetchInfo = () => blogFetch('/get-info')
 
-export const fetchResume = () => blogFetch('/resume')
+export const fetchResume = () => blogFetch('/get-resume')
 
-export const fetchArticle = (Id: string) => blogFetch('/article', { Id })
+export const fetchArticle = (Id: string) => blogFetch('/get-article', { Id })

@@ -16,8 +16,8 @@ const HeaderDom = () => {
     <div className="header">
       <Header>
         <Row>
-          <Col xs={1} sm={1} md={1} lg={1} xl={3} xxl={5} />
-          <Col xs={22} sm={22} md={22} lg={20} xl={18} xxl={14}>
+          <Col lg={1} xl={3} xxl={5} />
+          <Col md={22} lg={20} xl={18} xxl={14}>
             <div className="header-logo">
               <div>
                 <span>Ma</span>
@@ -29,13 +29,13 @@ const HeaderDom = () => {
         </Row>
       </Header>
       <Row className="header-footer">
-        <Col xs={1} sm={1} md={1} lg={1} xl={4} xxl={5} />
-        <Col xs={22} sm={22} md={22} lg={22} xl={18} xxl={14}>
+        <Col lg={1} xl={4} xxl={5} />
+        <Col lg={22} xl={18} xxl={14}>
           {headerTitle.map(item => (
             <div key={item.title} className="header-title-item">
               <Link to={item.link}>
                 <span
-                  className="iconfont"
+                  className="icon-font"
                   style={{ marginRight: 5 }}
                   dangerouslySetInnerHTML={item.icon}
                 />

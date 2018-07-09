@@ -1,17 +1,21 @@
 import { Card, Pagination } from 'antd'
 import * as React from 'react'
+import { Link } from 'react-router-dom'
 import { format } from '../../common'
 import { IPayload } from '../../types'
-
 import './style.less'
 interface IArticle {
   _id: string
-  content: string
+  tag: ITag
   title: string
   create_at: string
-  updated_at: string
   access: string
   type: string
+  abstract: string
+}
+interface ITag {
+  color: string
+  title: string
 }
 interface IHistory {
   push: (pathname: string) => void
@@ -25,10 +29,7 @@ interface IArticles {
 class Articles extends React.Component<IArticles> {
   public state = {
     pageIndex: 1,
-    pageSize: 5
-  }
-  public goArticle = (id: string) => {
-    this.props.history.push(`/article/${id}`)
+    pageSize: 10
   }
   public onChange = (page: number, pageSize: number) => {
     this.setState(
@@ -45,7 +46,7 @@ class Articles extends React.Component<IArticles> {
     this.props.fetchArticle(this.state)
   }
   public render() {
-    const { articles = [], total, history } = this.props
+    const { articles = [], total } = this.props
     const { pageIndex, pageSize } = this.state
     return (
       <>
@@ -53,28 +54,19 @@ class Articles extends React.Component<IArticles> {
           <Card
             key={item._id}
             bordered={false}
-            hoverable={true}
             className="article"
-            actions={[
-              <span key={item.create_at}>
-                创建于：{format(item.create_at)}
-              </span>,
-              <span key={item.updated_at}>
-                修改时间：{format(item.updated_at)}
-              </span>
-            ]}>
-            <div onClick={() => history.push(`/article/${item._id}`)}>
-              <h2>{item.title}</h2>
-              <p>
-                <span key={item.access} style={{ marginRight: 20 }}>
-                  浏览：{item.access}
-                </span>
-                <span key={item.type}>分类于：{item.type}</span>
+            type="inner">
+            <div>
+              <h3>{item.title}</h3>
+              <p className="tag">
+                <span>发表于：{format(item.create_at)}</span>
+                <span>分类：{item.type}</span>
+                <span>浏览：{item.access}</span>
               </p>
-              <p
-                className="content"
-                dangerouslySetInnerHTML={{ __html: item.content + '...' }}
-              />
+              <div className="abstract">{item.abstract} ...</div>
+              <Link to={`/article/${item._id}`}>
+                <span className="link">阅读全文 >></span>
+              </Link>
             </div>
           </Card>
         ))}

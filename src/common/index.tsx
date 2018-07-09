@@ -1,5 +1,5 @@
 import 'whatwg-fetch'
-export const api = 'http://localhost:8000'
+export const api = 'http://localhost:8001'
 export const headerImg =
   'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527245834290&di=2286cc7354adc925f79b92b719162dd4&imgtype=0&src=http%3A%2F%2Fpic32.photophoto.cn%2F20140828%2F0005018403917054_b.jpg'
 export const format = (date: string): string => {
@@ -7,10 +7,7 @@ export const format = (date: string): string => {
   const year = myDate.getFullYear()
   const month = myDate.getMonth() + 1
   const day = myDate.getDate()
-  const hours = myDate.getHours()
-  const minutes = myDate.getMinutes()
-  const seconds = myDate.getSeconds()
-  return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`
+  return `${year}-${month}-${day}`
 }
 
 export const dataToString = (data: object) => {
