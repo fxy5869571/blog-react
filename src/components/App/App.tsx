@@ -22,6 +22,7 @@ class App extends React.Component<IProps> {
     return !isResume ? (
       <Layout>
         <Header />
+
         <Layout>
           <Content>
             <Row>

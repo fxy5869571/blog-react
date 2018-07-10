@@ -41,8 +41,8 @@ const Sidebar = (props: IProps) => {
           }
           description={
             <div>
-              <p>{present}</p>
-              <p>
+              <p className="abstract">{present}</p>
+              <p className="abstract">
                 <span>文章 - {ArticleNum}</span>
                 <span style={{ marginRight: 10, marginLeft: 10 }}>|</span>
                 <span>访问 - {click}</span>

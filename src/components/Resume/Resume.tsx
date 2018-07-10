@@ -1,4 +1,4 @@
-import { Tooltip } from 'antd'
+import { Carousel } from 'antd'
 import * as React from 'react'
 import About from './About'
 import CallMe from './CallMe'
@@ -18,90 +18,77 @@ interface IResume {
 interface IProps {
   resume: IResume
 }
+interface IE {
+  deltaY: number
+}
 class Resume extends React.Component<IProps> {
-  public timer: any
+  public carousel: any
+  public pageList = [
+    { color: '#85ada3', component: <Index /> },
+    { color: '#0e8d82', component: <About /> },
+    { color: '#4b5b8a', component: <Skill /> },
+    { color: '#925b4b', component: <Undergo /> },
+    { color: '#48829c', component: <Works /> },
+    { color: '#9d946d', component: <CallMe /> }
+  ]
+  public dotList = [
+    { icon: '&#xe600;', label: '首页' },
+    { icon: '&#xe63e;', label: '关于我' },
+    { icon: '&#xe7b6;', label: '技能栈' },
+    { icon: '&#xe7a2;', label: '经历' },
+    { icon: '&#xe619;', label: '作品' },
+    { icon: '&#xe601;', label: '联系我' }
+  ]
   public state = {
-    currPage: 0,
-    dotList: [
-      { icon: '&#xe600;', label: '首页' },
-      { icon: '&#xe63e;', label: '关于我' },
-      { icon: '&#xe7b6;', label: '技能栈' },
-      { icon: '&#xe7a2;', label: '经历' },
-      { icon: '&#xe619;', label: '作品' },
-      { icon: '&#xe601;', label: '联系我' }
-    ],
-    pageList: [
-      { className: 'curr-page', component: <Index /> },
-      { className: 'next-page', component: <About /> },
-      { className: 'page-section', component: <Skill /> },
-      { className: 'page-section', component: <Undergo /> },
-      { className: 'page-section', component: <Works /> },
-      { className: 'prev-page', component: <CallMe /> }
-    ]
+    currentIndex: 0
   }
-  public onWheel = (e: any): void => {
-    const { deltaY } = e
-    clearTimeout(this.timer)
-    this.timer = setTimeout(() => {
-      const { pageList } = this.state
-
-      this.setState(
-        {
-          pageList: pageList.map((item, index, arr) => {
-            if (deltaY > 0) {
-              if (index === 0) {
-                return { ...item, className: arr[arr.length - 1].className }
-              } else {
-                return { ...item, className: arr[index - 1].className }
-              }
-            } else {
-              if (index === arr.length - 1) {
-                return { ...item, className: arr[0].className }
-              } else {
-                return { ...item, className: arr[index + 1].className }
-              }
-            }
-          })
-        },
-        () => {
-          this.state.pageList.forEach((item, index) => {
-            if (item.className === 'curr-page') {
-              this.setState({ currPage: index })
-            }
-          })
-        }
-      )
-    }, 300)
+  public constructor(props: IProps) {
+    super(props)
+  }
+  public onWheel = (e: IE) => {
+    if (e.deltaY > 0) {
+      this.carousel.next()
+    } else {
+      this.carousel.prev()
+    }
   }
   public render() {
-    const { pageList, dotList, currPage } = this.state
+    const { currentIndex } = this.state
+    const settings = {
+      beforeChange: (currentSlide: number, nextSlide: number) => {
+        this.setState({ currentIndex: nextSlide }, () => {
+          console.log(this.state.currentIndex)
+        })
+      },
+      dots: false,
+      infinite: false
+    }
     return (
-      <div className="resume">
-        <div className="resume-header" />
-        <div className="section-wrap" onWheel={this.onWheel}>
-          {pageList.map((item, index) => (
-            <div
-              className={`section section${index} ${item.className}`}
-              key={index}>
-              {item.component}
+      <div className="resume" onWheel={this.onWheel}>
+        <Carousel
+          vertical={true}
+          {...settings}
+          ref={ref => (this.carousel = ref)}>
+          {this.pageList.map((item, index) => (
+            <div key={index} className={`item${index}`}>
+              6544545546
             </div>
           ))}
-          <div className="dot-wrap">
-            {dotList.map((item, index) => {
-              return currPage === index ? (
-                <div key={index}>
-                  <Tooltip placement="left" title={item.label}>
-                    <span
-                      className="iconfont active"
-                      dangerouslySetInnerHTML={{ __html: item.icon }}
-                    />
-                  </Tooltip>
-                </div>
-              ) : (
-                <div key={index} className="item" />
-              )
-            })}
-          </div>
+        </Carousel>
+        <div className="resume-dots">
+          {this.dotList.map((item, index) => (
+            <div
+              className={`dot-wrp ${
+                index === currentIndex ? 'current' : 'else'
+              }`}>
+              <div
+                key={index}
+                dangerouslySetInnerHTML={{ __html: item.icon }}
+                className={`dot ${index === currentIndex ? '' : 'current-dot'}`}
+              />
+              <div className="item" />
+            </div>
+          ))}
         </div>
       </div>
     )

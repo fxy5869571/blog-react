@@ -9,7 +9,7 @@ const HeaderDom = () => {
     { title: '主页', icon: { __html: '&#xe600;' }, link: '/' },
     { title: '文章', icon: { __html: '&#xe643;' }, link: '/' },
     { title: '归档', icon: { __html: '&#xe660;' }, link: '/time-file' },
-    { title: '说说', icon: { __html: '&#xe6a1;' }, link: '/' },
+    { title: '说说', icon: { __html: '&#xe6a1;' }, link: '/say' },
     { title: '简历', icon: { __html: '&#xe60e;' }, link: '/resume' }
   ]
   return (

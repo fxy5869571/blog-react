@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "react-loadable":"5.4.0",
-    "antd":"^3.6.4",
+    "antd":"^3.6.6",
     "react":"^16.4.0",
     "react-dom":"^16.4.0",
     "react-redux":"^5.0.7",

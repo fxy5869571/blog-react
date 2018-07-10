@@ -63,7 +63,7 @@ class Articles extends React.Component<IArticles> {
                 <span>分类：{item.type}</span>
                 <span>浏览：{item.access}</span>
               </p>
-              <div className="abstract">{item.abstract} ...</div>
+              <div className="abstract">{item.abstract}...</div>
               <Link to={`/article/${item._id}`}>
                 <span className="link">阅读全文 >></span>
               </Link>
