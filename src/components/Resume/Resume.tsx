@@ -76,7 +76,7 @@ class Resume extends React.Component<IProps> {
           ref={ref => (this.carousel = ref)}>
           {this.pageList.map((item, index) => (
             <div key={index} className={`item${index}`}>
-              {index}
+              <div className="resume-item">{item.component}</div>
             </div>
           ))}
         </Carousel>
@@ -96,7 +96,11 @@ class Resume extends React.Component<IProps> {
             </div>
           ))}
         </div>
-        <div className="next">&#xe681;</div>
+        {currentIndex < 5 && (
+          <div className="next" onClick={() => this.carousel.next()}>
+            &#xe681;
+          </div>
+        )}
       </div>
     )
   }

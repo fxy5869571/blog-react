@@ -76,7 +76,7 @@ const Sidebar = (props: IProps) => {
           {articleTitle &&
             articleTitle.map((item, index) => (
               <li key={index} className="tag">
-                <Link to={item}>{item}</Link>
+                <Link to={`article`}>{item}</Link>
               </li>
             ))}
         </ul>

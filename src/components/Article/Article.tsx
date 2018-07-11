@@ -26,7 +26,7 @@ class Article extends React.Component<IProps> {
     super(props)
   }
   public componentDidMount() {
-    this.props.fetchArticle(this.props.match.params.Id)
+     this.props.fetchArticle(this.props.match.params.Id)
   }
   public render() {
     const {

@@ -48,8 +48,7 @@ class Articles extends React.Component<IArticles> {
   public render() {
     const { articles = [], total } = this.props
     const { pageIndex, pageSize } = this.state
-    return (
-      <>
+    return <>
         {articles.map(item => (
           <Card
             key={item._id}
@@ -71,15 +70,9 @@ class Articles extends React.Component<IArticles> {
           </Card>
         ))}
         <div className="Pagination">
-          <Pagination
-            current={pageIndex}
-            pageSize={pageSize}
-            total={total}
-            onChange={this.onChange}
-          />
+          <Pagination current={pageIndex} pageSize={pageSize} total={total} onChange={this.onChange} />
         </div>
       </>
-    )
   }
 }
 export default Articles
