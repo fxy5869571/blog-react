@@ -13,7 +13,7 @@ const list = [
         '针对圈子金服app的后台管理系统，包括p2p审核、放款，圈子管理，运营统计，代理商管理，会员信息，' +
         '各个模块的数据管理，反馈设置等等，为圈子金服提供基于互联网运营的整体解决方案。',
       title: '圈子金服后台管理系统',
-      url: 'https://github.com/fxy5869571'
+      url: 'http://adm.qqzi.com/react'
     }
   ],
   [
@@ -44,7 +44,7 @@ const Works = () => (
             <div key={key} className="item">
               <span className="work-title">{item.title}</span>
               <p>{item.content}</p>
-              <a className="work-link" href={item.url}>
+              <a className="work-link" href={item.url} target="view_window">
                 &#xe626;
               </a>
             </div>
