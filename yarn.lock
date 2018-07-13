@@ -3319,6 +3319,10 @@ he@1.1.x:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/he/download/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
 
+highlight.js@^9.11.0:
+  version "9.12.0"
+  resolved "https://registry.npmjs.org/highlight.js/-/highlight.js-9.12.0.tgz#e6d9dbe57cbefe60751f02af336195870c90c01e"
+
 history@^4.7.2:
   version "4.7.2"
   resolved "http://registry.npm.taobao.org/history/download/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"
@@ -6362,6 +6366,12 @@ react-dom@^16.4.1:
 react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "http://registry.npm.taobao.org/react-error-overlay/download/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
+
+react-highlight@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.npmjs.org/react-highlight/-/react-highlight-0.12.0.tgz#34de986a0bfdf228904d0c269b69538d95b35802"
+  dependencies:
+    highlight.js "^9.11.0"
 
 react-lazy-load@^3.0.12:
   version "3.0.13"

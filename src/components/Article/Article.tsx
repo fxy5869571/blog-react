@@ -1,5 +1,6 @@
 import { Card } from 'antd'
 import * as React from 'react'
+import Highlight from 'react-highlight'
 import './style.less'
 interface IArticle {
   _id: string
@@ -22,11 +23,13 @@ interface IProps {
   match: IMatch
 }
 class Article extends React.Component<IProps> {
-  constructor(props: IProps) {
-    super(props)
-  }
   public componentDidMount() {
-     this.props.fetchArticle(this.props.match.params.Id)
+    this.props.fetchArticle(this.props.match.params.Id)
+  }
+  public addCode = (content: string) => {
+    return content
+      .replace('<pre>', '<pre><code>')
+      .replace('</pre>', '</pre></code>')
   }
   public render() {
     const {
@@ -46,12 +49,9 @@ class Article extends React.Component<IProps> {
           <span>{type}</span>
           <span>{access}</span>
         </div>
-        <div
-          className="dark"
-          dangerouslySetInnerHTML={{
-            __html: content
-          }}
-        />
+        <Highlight innerHTML={true} className="javascript">
+          {this.addCode(content)}
+        </Highlight>
       </Card>
     )
   }
