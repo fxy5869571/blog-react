@@ -8,13 +8,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/components/Articles/Articles.tsx" line="60" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d319f240-abec-45c6-8651-3d6ac1fe67dd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/images.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Article/Article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Article.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="d319f240-abec-45c6-8651-3d6ac1fe67dd" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -67,8 +61,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="171">
+              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -402,7 +396,7 @@
       <workItem from="1531271895420" duration="1917000" />
       <workItem from="1531273902193" duration="26006000" />
       <workItem from="1531362991005" duration="697000" />
-      <workItem from="1531446554234" duration="11982000" />
+      <workItem from="1531446554234" duration="12263000" />
     </task>
     <task id="LOCAL-00001" summary="规范变量名">
       <created>1528903787362</created>
@@ -467,11 +461,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531363603261</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="文章详情代码高亮">
+      <created>1531461819044</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1531461819044</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218198000" />
+    <option name="totallyTimeSpent" value="218479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -516,7 +517,8 @@
     <MESSAGE value="简历首页" />
     <MESSAGE value="简历轮播点击调到该页" />
     <MESSAGE value="a标签打开新窗口" />
-    <option name="LAST_COMMIT_MESSAGE" value="a标签打开新窗口" />
+    <MESSAGE value="文章详情代码高亮" />
+    <option name="LAST_COMMIT_MESSAGE" value="文章详情代码高亮" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -776,13 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/颗粒文字.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -838,10 +833,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="171">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
         </state>
       </provider>
     </entry>
