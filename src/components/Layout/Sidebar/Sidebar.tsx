@@ -13,7 +13,7 @@ export interface IInfo {
   classList: string[]
   tag: ITag[]
   ArticleNum: string
-  click: number
+  access: number
   present: string
   github: string
   name: string
@@ -25,7 +25,7 @@ export interface IProps {
 }
 const Sidebar = (props: IProps) => {
   const { articleTitle, info } = props
-  const { tag, github, present, click, ArticleNum, name, authorImg } = info
+  const { tag, github, present, access, ArticleNum, name, authorImg } = info
   const gitList = [0, 90, 180, 270]
   return (
     <div className="Sidebar">
@@ -45,7 +45,7 @@ const Sidebar = (props: IProps) => {
               <p className="abstract">
                 <span>文章 - {ArticleNum}</span>
                 <span style={{ marginRight: 10, marginLeft: 10 }}>|</span>
-                <span>访问 - {click}</span>
+                <span>访问 - {access}</span>
               </p>
             </div>
           }
