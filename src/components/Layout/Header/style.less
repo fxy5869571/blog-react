@@ -1,3 +1,4 @@
+@import "../../../theme/const";
 .header {
    margin-bottom: 20px;
   .ant-layout-header {
@@ -10,6 +11,10 @@
     );
     height: 120px;
     line-height: 1.5;
+  }
+  .header-logo-wrp{
+    display: flex;
+    justify-content: space-between;
   }
   .header-logo div > span:first-child {
     font-size: 38px;
@@ -39,10 +44,26 @@
     }
   }
   @media (max-width: 767px) {
+    .menu-button-wrp{
+      display: flex;
+    }
+    .header-footer{
+      display: none;
+    }
+    .ant-layout-header{
+      height: 80px;
+    }
+    .header-logo div > span:first-child,.header-logo div > span:last-child {
+      font-size: 25px;
+    }
     .header-title-item{
       width:60px;
       margin-right: 10px;
+      a{
+        color: #eef4f9;
+      }
     }
+
   }
   .header-title-item:hover {
     background-color: #333;
@@ -61,4 +82,16 @@
   .tag {
     margin-bottom: 5px;
   }
+
+  .menu-button{
+    line-height: 75px;
+    font-size: 22px;
+    color: white;
+  }
+}
+.ant-dropdown-menu{
+  width: 100vw;
+}
+.menu-button-wrp{
+  display: none;
 }

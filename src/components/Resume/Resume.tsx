@@ -1,5 +1,6 @@
-import { Carousel, Tooltip } from 'antd'
+import { Carousel, Dropdown, Icon, Menu, Tooltip } from 'antd'
 import * as React from 'react'
+import { Link } from 'react-router-dom'
 import About from './About'
 import CallMe from './CallMe'
 import Index from './Index'
@@ -7,6 +8,7 @@ import Skill from './Skill'
 import './style.less'
 import Undergo from './Undergo'
 import Works from './Works'
+
 interface IResume {
   contact: object
   default: object
@@ -24,12 +26,12 @@ interface IE {
 class Resume extends React.Component<IProps> {
   public carousel: any
   public pageList = [
-    { color: '#85ada3', component: <Index /> },
-    { color: '#0e8d82', component: <About /> },
-    { color: '#4b5b8a', component: <Skill /> },
-    { color: '#925b4b', component: <Undergo /> },
-    { color: '#48829c', component: <Works /> },
-    { color: '#9d946d', component: <CallMe /> }
+    { color: '#85ada3', component: <Index />, title: '首页' },
+    { color: '#0e8d82', component: <About />, title: '关于我' },
+    { color: '#4b5b8a', component: <Skill />, title: '技能栈' },
+    { color: '#925b4b', component: <Undergo />, title: '经历' },
+    { color: '#48829c', component: <Works />, title: '作品集' },
+    { color: '#9d946d', component: <CallMe />, title: '联系我' }
   ]
   public dotList = [
     { icon: '&#xe600;', label: '首页' },
@@ -53,23 +55,44 @@ class Resume extends React.Component<IProps> {
     }
   }
   public dotClick = (index: number): void => {
-    this.setState({ currentIndex: index }, () => {
-      this.carousel.goTo(index)
-    })
+    this.carousel.goTo(index)
+    this.setState({ currentIndex: index })
   }
   public render() {
+    const menu = (
+      <Menu>
+        {this.pageList.map((item, index) => (
+          <Menu.Item key={item.color} onClick={() => this.dotClick(index)}>
+            <div>{item.title}</div>
+          </Menu.Item>
+        ))}
+      </Menu>
+    )
     const { currentIndex } = this.state
     const settings = {
       beforeChange: (currentSlide: number, nextSlide: number) => {
-        this.setState({ currentIndex: nextSlide }, () => {
-          console.log(this.state.currentIndex)
-        })
+        this.setState({ currentIndex: nextSlide })
       },
       dots: false,
       infinite: false
     }
     return (
       <div className="resume" onWheel={this.onWheel}>
+        <div className="resume-header">
+          <Tooltip title="博客首页" placement="rightBottom">
+            <Link to="/">
+              <img
+                src="http://img.qqzi.com/Content/Upload/2018/07/04/7bef27fa-35e0-470f-8797-3211aa597332.jpg"
+                alt=""
+              />
+            </Link>
+          </Tooltip>
+          <div className="resume-menu-button">
+            <Dropdown overlay={menu} trigger={['click']}>
+              <Icon type="bars" className="menu-button" />
+            </Dropdown>
+          </div>
+        </div>
         <Carousel
           vertical={true}
           {...settings}

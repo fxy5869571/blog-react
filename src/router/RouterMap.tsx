@@ -9,6 +9,10 @@ const RouterList: any[] = [
     path: '/'
   },
   {
+    component: () => import('../containers/Articles'),
+    path: '/articles'
+  },
+  {
     component: () => import('../containers/Article'),
     path: '/article/:Id'
   },

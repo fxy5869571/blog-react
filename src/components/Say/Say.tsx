@@ -1,4 +1,5 @@
-import {  Pagination, Timeline } from 'antd'
+import { Pagination, Timeline } from 'antd'
+import QueueAnim from 'rc-queue-anim'
 import * as React from 'react'
 import './style.less'
 const Item = Timeline.Item
@@ -29,29 +30,39 @@ class Say extends React.Component<IProps> {
     const { pageIndex, pageSize } = payload
     return (
       <div className="time-line-wrp">
-        <Timeline className="time-line">
-          {say &&
-            say.map(item => (
-              <Item key={item._id}>
-                <div className="item">
-                  <div dangerouslySetInnerHTML={{ __html: item.say }} />
-                  <span className="posted">
-                    发表于：{new Date(item.create_at).toLocaleString()}
-                  </span>
-                </div>
-              </Item>
-            ))}
-          <div className="pagination">
-            <Pagination
-              current={pageIndex}
-              pageSize={pageSize}
-              total={total}
-              showSizeChanger={true}
-              onChange={this.onChange}
-              onShowSizeChange={this.onShowSizeChange}
-            />
-          </div>
-        </Timeline>
+        <div className="time-line">
+          <Timeline key="Timeline">
+            {say &&
+              say.map(item => (
+                <Item key={item._id}>
+                  <QueueAnim
+                    animConfig={[
+                      { opacity: [1, 0], translateX: [0, -150] },
+                      { opacity: [1, 0], translateX: [0, 150] }
+                    ]}
+                    duration={1500}>
+                    <div className="item" key={item._id}>
+                      <div dangerouslySetInnerHTML={{ __html: item.say }} />
+                      <span className="posted">
+                        发表于：{new Date(item.create_at).toLocaleString()}
+                      </span>
+                    </div>
+                  </QueueAnim>
+                </Item>
+              ))}
+            <QueueAnim className="pagination" delay={1000}>
+              <Pagination
+                current={pageIndex}
+                pageSize={pageSize}
+                total={total}
+                key="pagination"
+                showSizeChanger={true}
+                onChange={this.onChange}
+                onShowSizeChange={this.onShowSizeChange}
+              />
+            </QueueAnim>
+          </Timeline>
+        </div>
       </div>
     )
   }

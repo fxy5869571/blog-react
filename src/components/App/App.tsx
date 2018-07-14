@@ -1,26 +1,27 @@
-import { Col, Layout, Row } from 'antd'
+import { BackTop, Col, Layout, Row } from 'antd'
 import * as React from 'react'
 import { ReactHTML } from 'react'
+import Footer from '../Layout/Footer/Footer'
 import Header from '../Layout/Header/Header'
 import Sidebar, { IInfo } from '../Layout/Sidebar/Sidebar'
 import './style.less'
 
-const { Footer, Content } = Layout
+const { Content } = Layout
 interface ILocation {
   pathname: string
 }
 interface IProps {
   info: IInfo
-  articleTitle: string[]
   children: ReactHTML
   location: ILocation
 }
 class App extends React.Component<IProps> {
   public render() {
-    const { info, articleTitle, children, location } = this.props
+    const { info, children, location } = this.props
     const isResume = location.pathname === '/resume'
     return !isResume ? (
       <Layout>
+        <BackTop />
         <Header />
         <Layout>
           <Content>
@@ -38,14 +39,14 @@ class App extends React.Component<IProps> {
                     lg={{ span: 6, offset: 1 }}
                     xl={{ span: 6, offset: 1 }}
                     xxl={{ span: 6, offset: 1 }}>
-                    <Sidebar info={info} articleTitle={articleTitle} />
+                    <Sidebar info={info} />
                   </Col>
                 </Row>
               </Col>
             </Row>
           </Content>
         </Layout>
-        <Footer>Footer</Footer>
+        <Footer />
       </Layout>
     ) : (
       <div>{children}</div>

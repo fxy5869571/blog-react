@@ -18,14 +18,22 @@ export interface IInfo {
   github: string
   name: string
   authorImg: string
+  lastArticle: any[]
 }
 export interface IProps {
   info: IInfo
-  articleTitle: string[]
 }
 const Sidebar = (props: IProps) => {
-  const { articleTitle, info } = props
-  const { tag, github, present, access, ArticleNum, name, authorImg } = info
+  const {
+    tag,
+    github,
+    present,
+    access,
+    ArticleNum,
+    name,
+    authorImg,
+    lastArticle
+  } = props.info
   const gitList = [0, 90, 180, 270]
   return (
     <div className="Sidebar">
@@ -73,10 +81,10 @@ const Sidebar = (props: IProps) => {
       </Card>
       <Card title="文章列表" hoverable={true} className="card">
         <ul>
-          {articleTitle &&
-            articleTitle.map((item, index) => (
+          {lastArticle &&
+            lastArticle.map((item, index) => (
               <li key={index} className="tag">
-                <Link to={`article`}>{item}</Link>
+                <Link to={`/article/${item._id}`}>{item.title}</Link>
               </li>
             ))}
         </ul>

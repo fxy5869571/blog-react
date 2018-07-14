@@ -1,4 +1,5 @@
 import { Icon, Pagination, Timeline } from 'antd'
+import QueueAnim from 'rc-queue-anim'
 import * as React from 'react'
 import { Link } from 'react-router-dom'
 import { IPayload } from '../../types'
@@ -75,20 +76,38 @@ class TimeFile extends React.Component<IArticles> {
     })
     return (
       <Timeline>
-        {timeItems.map(article => {
+        {timeItems.map((article, index) => {
           return article.type === 'time' ? (
             <Timeline.Item
               className="item"
               key={article.key}
               color="blue"
               dot={<Icon type="clock-circle-o" style={{ fontSize: '16px' }} />}>
-              <p className="time">{article.key}</p>
+              <QueueAnim
+                animConfig={[
+                  { opacity: [1, 0], translateX: [0, 150] },
+                  { opacity: [1, 0], translateX: [0, -150] }
+                ]}
+                duration={1500}>
+                <div key={index}>
+                  <p className="time">{article.key}</p>
+                </div>
+              </QueueAnim>
             </Timeline.Item>
           ) : (
             <Timeline.Item key={article._id} color={article.color}>
-              <Link to={`/article/${article._id}`}>
-                <p className='title'>{article.title}</p>
-              </Link>
+              <QueueAnim
+                animConfig={[
+                  { opacity: [1, 0], translateX: [0, 150] },
+                  { opacity: [1, 0], translateX: [0, -150] }
+                ]}
+                duration={1500}>
+                <div key={article._id}>
+                  <Link to={`/article/${article._id}`}>
+                    <p className="title">{article.title}</p>
+                  </Link>
+                </div>
+              </QueueAnim>
             </Timeline.Item>
           )
         })}

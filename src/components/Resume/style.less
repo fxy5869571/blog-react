@@ -14,6 +14,10 @@
   height: 100px;
 }
 .resume{
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
   .next{
     font-family: iconfont;
     cursor:pointer;
@@ -306,14 +310,10 @@
     margin-top: -10%;
   }
   .cards {
-    padding: 3% 0;
+    margin: 3% 0;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    .column {
-      flex-basis: 100%;
-      display: flex;
-      justify-content: space-between;
       .item{
         padding:20px;
         text-align: left;
@@ -321,9 +321,9 @@
         color: black;
         transition: box-shadow .3s ease;
         box-shadow: 0 3px 10px rgba(0,0,0,.2);
-        margin-bottom: 20px;
         border-radius: 10px;
         width:47%;
+        margin: 1.5% 1.5%;
         height: 200px;
         background-color: #F2F4F5;
         p{
@@ -355,11 +355,21 @@
             opacity: 1;
             background: #E6E6E6;
           }
-        }
+
       }
     }
   }
+  .ant-carousel .slick-slide {
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+    background: #364d79;
+    overflow: hidden;
+  }
 
+  .ant-carousel .slick-slide h3 {
+    color: #fff;
+  }
 }
 .skill{
   margin-top: -10%;
@@ -457,7 +467,8 @@
       }
     }
   }
-}@keyframes outX {
+}
+@keyframes outX {
    0% {  left: -27px;  }
    100% {  left: 217px;  }
  }
@@ -472,4 +483,95 @@
 @keyframes innerY {
   0% {  top: 122px;  }
   100% {  top: -22px;  }
+}
+.resume-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 10px;
+  left: 0;
+  width: 100%;
+  top:0;
+  z-index: 3;
+  img{
+    animation: react infinite 5s linear;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .resume-menu-button{
+    display: none;
+  }
+  .menu-button{
+    font-size: 25px;
+    color: white;
+  }
+}
+@media (max-width: 767px){
+  .resume {
+    .resume-menu-button{
+      display: block;
+    }
+    .title{
+      font-size: 19px;
+    }
+    p{
+      font-size: 15px;
+    }
+    .resume-dots{
+      display: none;
+    }
+    .about{
+      width: 95%;
+    }
+    .tag{
+      .tag-icon{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 25px;
+      }
+    }
+    .skills{
+     flex-direction: column;
+      .skill-circle{
+        margin: 0 auto 20px auto;
+      }
+    }
+    .undergo{
+      .card{
+        width: 95%;
+        margin: 0 auto 20px auto;
+        .react{
+          display: none;
+        }
+        .card-title{
+          font-size: 18px;
+        }
+        .card-right{
+          font-size: 14px;
+          span{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .works{
+      width: 98%;
+      height: 80%;
+      margin: 0 auto;
+      overflow: scroll;
+      .cards{
+        .work-title{
+          font-size: 19px
+        }
+        p{font-size: 15px}
+        .item{
+          width: 100%;
+        }
+      }
+    }
+  }
 }
