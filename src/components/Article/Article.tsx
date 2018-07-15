@@ -48,7 +48,7 @@ class Article extends React.Component<IProps> {
     } = this.props.article
     return (
       <div className="article">
-        <Card>
+        <Card hoverable={true} bordered={false}>
           <div>
             <h3>{title}</h3>
             <div className="tag">

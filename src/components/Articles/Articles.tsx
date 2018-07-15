@@ -60,6 +60,7 @@ class Articles extends React.Component<IArticles> {
             <Card
               key={item._id}
               bordered={false}
+              hoverable={true}
               className="article"
               type="inner">
               <div>

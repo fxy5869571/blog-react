@@ -7,10 +7,9 @@ const { Header } = Layout
 const HeaderDom = () => {
   const headerTitle = [
     { title: '主页', icon: { __html: '&#xe600;' }, url: '/' },
-    { title: '文章', icon: { __html: '&#xe643;' }, url: '/articles' },
     { title: '归档', icon: { __html: '&#xe660;' }, url: '/time-file' },
     { title: '说说', icon: { __html: '&#xe6a1;' }, url: '/say' },
-    { title: '简历', icon: { __html: '&#xe60e;' }, url: '/resume' }
+    { title: '书单', icon: { __html: '&#xe60e;' }, url: '/books' }
   ]
   const menu = (
     <Menu className="menu">
