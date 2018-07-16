@@ -1,4 +1,4 @@
-import { Card, Tag } from 'antd'
+import { Card, Tag, Tooltip } from 'antd'
 import * as React from 'react'
 import { Link } from 'react-router-dom'
 import { headerImg } from '../../../common'
@@ -15,18 +15,17 @@ export interface IInfo {
   ArticleNum: string
   access: number
   present: string
-  github: string
   name: string
   authorImg: string
   lastArticle: any[]
 }
 export interface IProps {
   info: IInfo
+  fetchArticle: (payload: object) => void
 }
 const Sidebar = (props: IProps) => {
   const {
     tag,
-    github,
     present,
     access,
     ArticleNum,
@@ -34,7 +33,6 @@ const Sidebar = (props: IProps) => {
     authorImg,
     lastArticle
   } = props.info
-  const gitList = [0, 90, 180, 270]
   return (
     <div className="Sidebar">
       <Card hoverable={true} className="card" cover={<img src={headerImg} />}>
@@ -61,20 +59,51 @@ const Sidebar = (props: IProps) => {
       </Card>
       <Card title="FOLLOW ME" hoverable={true} className="card">
         <div className="icon-git-wrp">
-          {gitList.map(item => (
-            <div
-              key={item}
-              className="icon-font icon-git"
-              style={{ transform: `rotate(${item}deg)` }}>
-              <a href={github}> &#xea0a;</a>
-            </div>
-          ))}
+          <div className="call">
+            <Tooltip title="个人简历">
+              <Link to="/resume">&#xe60e;</Link>
+            </Tooltip>
+            <Tooltip title="github">
+              <a href="https://github.com/fxy5869571" target="view_window">
+                &#xea0a;
+              </a>
+            </Tooltip>
+            <Tooltip
+              title={
+                <img
+                  className="wx"
+                  src="http://img.qqzi.com/Content/Upload/2018/07/11/e2727fb9-17ab-44f6-a7f8-834ef23245fc.png"
+                  alt="微信"
+                  width={100}
+                  height={100}
+                />
+              }>
+              <a>&#xe7e5;</a>
+            </Tooltip>
+            <Tooltip title="知乎">
+              <a
+                href="https://www.zhihu.com/people/fan-xing-yu-8/activities"
+                target="view_window">
+                &#xe625;
+              </a>
+            </Tooltip>
+          </div>
         </div>
       </Card>
       <Card title="云标签" hoverable={true} className="card">
         {tag &&
           tag.map(item => (
-            <Tag key={item.title} color={item.color} className="tag">
+            <Tag
+              key={item.title}
+              color={item.color}
+              className="tag"
+              onClick={() =>
+                props.fetchArticle({
+                  pageIndex: 1,
+                  pageSize: 10,
+                  tagTitle: item.title
+                })
+              }>
               {item.title}
             </Tag>
           ))}

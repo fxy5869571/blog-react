@@ -2,11 +2,9 @@ import {
   RECEIVE_ARTICLE,
   RECEIVE_ARTICLES,
   RECEIVE_INFO,
-  RECEIVE_RESUME,
   REQUEST_ARTICLE,
   REQUEST_ARTICLES,
   REQUEST_INFO,
-  REQUEST_RESUME
 } from '../constants'
 import { IPayload } from '../types'
 
@@ -44,13 +42,3 @@ export interface IReceiveArticle {
   article: object[]
 }
 export type ArticleAction = IRequestArticle | IReceiveArticle
-
-// blog resume action
-export interface IRequestResume {
-  type: REQUEST_RESUME
-}
-export interface IReceiveResume {
-  type: RECEIVE_RESUME
-  resume: object
-}
-export type ResumeAction = IRequestResume | IReceiveResume

@@ -42,7 +42,6 @@ const CallMe = () => (
     </div>
     <div className="footer">
       <div className="item">All Rights Reserved</div>
-      <div className="item">蜀ICP备15021330号 Copyright © 2015 - 2017</div>
     </div>
   </div>
 )

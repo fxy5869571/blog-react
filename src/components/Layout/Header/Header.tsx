@@ -128,7 +128,7 @@ const HeaderDom = () => {
                   split={getSplit}
                   delay={2200}
                   interval={30}>
-                  记录自 己学习 的历程，文章写 得不好 大佬们 别喷我
+                  记录 自己 学习 历程，文章 写得 不好 请见 谅
                 </Texty>
               </div>
               <div className="menu-button-wrp">

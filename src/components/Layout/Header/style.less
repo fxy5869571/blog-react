@@ -35,13 +35,25 @@
     }
   }
   @media (max-width: 767px) {
+    .combined {
+      margin-left: -30px;
+      width: 250px;
+      .title {
+        font-size: 20px;
+      }
+      .combined-bar {
+        top: 30px;
+      }
+    }
     .combined .content {
-      width: 200px;
+      top: 35px;
+      width: 260px;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
     }
     .menu-button-wrp {
+      margin-top: -35px;
       display: flex;
     }
     .header-footer {
@@ -106,7 +118,7 @@
 }
 .combined {
   color: #fff;
-  width: 316px;
+  width: 260px;
   height: 100px;
   position: relative;
 }
@@ -142,7 +154,7 @@
 .combined-bar {
   width: 100%;
   height: 1px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   position: absolute;
   top: 45px;
 }

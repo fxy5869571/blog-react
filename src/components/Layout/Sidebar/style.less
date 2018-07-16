@@ -1,64 +1,88 @@
-@import "../../../theme/const";
-.Sidebar{
-  .abstract{
+@import '../../../theme/const';
+.Sidebar {
+  .call {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      color: #555;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      border: 1px solid rgba(60, 60, 60, 0.1);
+      font-family: iconfont;
+      font-size: 20px;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: #333;
+        color: white;
+      }
+    }
+  }
+  .abstract {
     color: @tag-color;
     font-size: 13px;
   }
   .tag {
     margin-bottom: 5px;
   }
-  .card{
+  .card {
     margin-bottom: 20px;
   }
-  .card-title{
+  .card-title {
     font-size: 25px;
     font-weight: 600;
     color: @title-color;
     text-align: center;
   }
-  .authorImg{
+  .authorImg {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .authorImg img{
+  .authorImg img {
     margin-top: -80px;
     width: 110px;
     height: 110px;
     border-radius: 100%;
-    transition: transform .8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
   }
-  .authorImg img:hover{
-    transform:rotate(360deg);
+  .authorImg img:hover {
+    transform: rotate(360deg);
   }
-  .icon-git-wrp{
+  .icon-git-wrp {
     display: flex;
     justify-content: start;
   }
-  .icon-git{
-    transition: all .5s ease;
+  .icon-git {
+    transition: all 0.5s ease;
     width: 45px;
     height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid  rgb(236, 236, 236);
+    border: 1px solid rgb(236, 236, 236);
     font-size: 2rem;
     margin: 5px;
   }
-  .icon-git:hover{
+  .icon-git:hover {
     color: rgb(236, 236, 236);
     background-color: #444;
   }
-  .icon-git a:hover{
+  .icon-git a:hover {
     color: #fff;
   }
-  .icon-git a{
+  .icon-git a {
     color: #767676;
   }
 }
 @media (max-width: 767px) {
-  .Sidebar{
+  .Sidebar {
     margin-top: 10px;
   }
 }
