@@ -27,6 +27,10 @@ const RouterList: any[] = [
   {
     component: () => import('../containers/TimeFile'),
     path: '/time-file'
+  },
+  {
+    component: () => import('../containers/Collect'),
+    path: '/collect'
   }
 ]
 const RouterMap = () => (

@@ -3,18 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react-loadable":"5.4.0",
-    "antd":"^3.6.6",
-    "react":"^16.4.1",
-    "react-dom":"^16.4.1",
-    "react-redux":"^5.0.7",
-    "react-router-dom":"^4.3.1",
+    "react-loadable": "5.4.0",
+    "antd": "^3.6.6",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
     "react-scripts-ts": "2.15.1",
     "redux": "^4.0.0",
     "redux-saga": "^1.0.0-beta.1",
-    "whatwg-fetch":"^2.0.4",
-    "react-highlight":"^0.12.0",
-    "rc-queue-anim":"^1.6.5"
+    "whatwg-fetch": "^2.0.4",
+    "react-highlight": "^0.12.0",
+    "rc-queue-anim": "^1.6.5",
+    "rc-texty": "^0.1.1",
+    "rc-tween-one": "^2.2.2"
   },
   "scripts": {
     "start": "react-app-rewired start --scripts-version react-scripts-ts",
@@ -23,7 +25,7 @@
     "eject": "react-scripts-ts eject"
   },
   "devDependencies": {
-    "@types/react-loadable":"5.4.0",
+    "@types/react-loadable": "5.4.0",
     "@types/react-redux": "^6.0.0",
     "@types/node": "^10.0.6",
     "@types/react": "^16.3.14",
@@ -32,7 +34,7 @@
     "prettier": "^1.13.4",
     "react-app-rewired": "^1.5.2",
     "ts-import-plugin": "^1.4.4",
-    "react-app-rewire-less":"^2.1.1",
-    "typescript":"^2.9.2"
+    "react-app-rewire-less": "^2.1.1",
+    "typescript": "^2.9.2"
   }
 }

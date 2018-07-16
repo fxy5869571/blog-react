@@ -1566,6 +1566,10 @@ classnames@2.x, classnames@^2.2.0, classnames@^2.2.1, classnames@^2.2.3, classna
   version "2.2.5"
   resolved "http://registry.npm.taobao.org/classnames/download/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
+classnames@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.npmjs.org/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+
 clean-css@4.1.x:
   version "4.1.11"
   resolved "http://registry.npm.taobao.org/clean-css/download/clean-css-4.1.11.tgz#2ecdf145aba38f54740f26cefd0ff3e03e125d6a"
@@ -6242,6 +6246,14 @@ rc-tabs@~9.2.0:
     rc-util "^4.0.4"
     warning "^3.0.0"
 
+rc-texty@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npmjs.org/rc-texty/-/rc-texty-0.1.1.tgz#e543a589be8eb1e78ffa3588a04b021a2454f27b"
+  dependencies:
+    babel-runtime "6.x"
+    classnames "^2.2.6"
+    rc-tween-one "^2.2.0"
+
 rc-time-picker@~3.3.0:
   version "3.3.1"
   resolved "http://registry.npm.taobao.org/rc-time-picker/download/rc-time-picker-3.3.1.tgz#94f8bbd51e6b93de1f01e78064aef1e6d765b367"
@@ -6304,7 +6316,7 @@ rc-trigger@^2.2.0, rc-trigger@^2.2.2, rc-trigger@^2.3.0:
     rc-animate "2.x"
     rc-util "^4.4.0"
 
-rc-tween-one@^2.0.3:
+rc-tween-one@^2.0.3, rc-tween-one@^2.2.0, rc-tween-one@^2.2.2:
   version "2.2.2"
   resolved "http://registry.npm.taobao.org/rc-tween-one/download/rc-tween-one-2.2.2.tgz#7c40cb8a283904d7d49152ab2aec8e130fc52288"
   dependencies:
