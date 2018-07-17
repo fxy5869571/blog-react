@@ -67,7 +67,7 @@ class Articles extends React.Component<IArticles> {
                 <h3>{item.title}</h3>
                 <p className="tag">
                   <span>发表于：{format(item.create_at)}</span>
-                  <span>标签：{item.tag.title}</span>
+                  <span>标签：{item.tag && item.tag.title}</span>
                   <span>浏览：{item.access}</span>
                 </p>
                 <div className="abstract">{item.abstract}...</div>

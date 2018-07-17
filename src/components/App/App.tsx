@@ -25,7 +25,7 @@ class App extends React.Component<IProps> {
     return !isResume ? (
       <Layout>
         <BackTop />
-        <Header />
+        <Header fetchArticle={fetchArticle} />
         <Layout>
           <Content>
             <Row>

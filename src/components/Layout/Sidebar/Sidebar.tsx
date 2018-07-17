@@ -104,7 +104,7 @@ const Sidebar = (props: IProps) => {
                   tagTitle: item.title
                 })
               }>
-              {item.title}
+              <Link to="/"> {item.title}</Link>
             </Tag>
           ))}
       </Card>
