@@ -32,6 +32,11 @@ class Article extends React.Component<IProps> {
   public componentDidMount() {
     this.props.fetchArticle(this.props.match.params.Id)
   }
+  public componentDidUpdate(prevProps: IProps) {
+    if (this.props.match.params.Id !== prevProps.match.params.Id) {
+      this.props.fetchArticle(this.props.match.params.Id)
+    }
+  }
   public addCode = (content: string) => {
     return content
       .replace('<pre>', '<pre><code>')
