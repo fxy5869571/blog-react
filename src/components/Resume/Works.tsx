@@ -45,7 +45,16 @@ const Works = () => {
           </div>
         ))}
       </div>
-      <p>在github上查看更多</p>
+      <p>
+        <a
+          href="https://github.com/fxy5869571"
+          style={{
+            color: '#fff',
+            cursor: 'pointer'
+          }}>
+          在github上查看更多
+        </a>
+      </p>
     </div>
   )
 }
