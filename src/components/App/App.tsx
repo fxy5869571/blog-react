@@ -7,7 +7,6 @@ import Header from '../Layout/Header/Header'
 import Sidebar, { IInfo } from '../Layout/Sidebar/Sidebar'
 
 import './style.less'
-
 const { Content } = Layout
 interface ILocation {
   pathname: string
