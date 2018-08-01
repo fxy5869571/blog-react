@@ -1,4 +1,4 @@
-import { connect, Dispatch } from 'react-redux'
+import { connect } from 'react-redux'
 import { DELETE_COLLECT, REQUEST_COLLECT } from '../actions/collect'
 import Collect from '../components/Collect/Collect'
 interface ICollect {
@@ -14,7 +14,7 @@ const mapStateToProps = ({ collect }: IState) => ({
   payload: collect.payload || { pageIndex: 1, pageSize: 16 },
   total: collect.total || 0
 })
-const mapDispatchToProps = (dispatch: Dispatch) => ({
+const mapDispatchToProps = (dispatch: any) => ({
   deleteCollect: (id: string) => {
     dispatch({ type: DELETE_COLLECT, payload: { _id: id } })
   },

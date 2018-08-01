@@ -1,4 +1,4 @@
-import { connect, Dispatch } from 'react-redux'
+import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import App from '../components/App/App'
 import { REQUEST_ARTICLES, REQUEST_INFO } from '../constants'
@@ -11,7 +11,7 @@ const mapStateToProps = ({ info }: IInfo) => {
   return { info }
 }
 
-export const mapDispatchToProps = (dispatch: Dispatch) => {
+export const mapDispatchToProps = (dispatch: any) => {
   return {
     actions: dispatch({ type: REQUEST_INFO }),
     fetchArticle: (payload: IPayload) => {

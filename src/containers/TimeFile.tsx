@@ -1,4 +1,4 @@
-import { connect, Dispatch } from 'react-redux'
+import { connect } from 'react-redux'
 import TimeFile from '../components/TimeFile/TimeFile'
 import { REQUEST_ARTICLES } from '../constants'
 import { IPayload } from '../types'
@@ -17,7 +17,7 @@ const mapStateToProps = (state: IState): object => {
   }
 }
 
-export const mapDispatchToProps = (dispatch: Dispatch) => {
+export const mapDispatchToProps = (dispatch: any) => {
   return {
     fetchArticle: (payload: IPayload) => {
       dispatch({
