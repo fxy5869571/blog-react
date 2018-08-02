@@ -1,6 +1,25 @@
-基于typescript react koa mongodb 的个人博客，嗯，写这个项目只要是想学习下typescript
-博客预览地址 [传送门](http://132.232.34.190).
-博客管理端预览地址 [传送门](http://132.232.34.190/admin).
-域名还在玩命备案中（(⊙o⊙)…好像我玩命也没啥用）
+## Apple的个人博客
+
+### 技术栈
+
+```
+typescript + react + redux+ redux-saga + react-router + koa2
+```
+
+### 演示地址
+__[Apple的个人博客](http://132.232.34.190/)__
+
+### 管理端演示地址
+__[Apple的个人博客管理端](http://132.232.34.190/admin)__
 
 
+## Usage
+
+### 安装
+```
+git clone https://github.com/fxy5869571/blog-react.git
+
+cd blog-react
+
+yarn install
+```
