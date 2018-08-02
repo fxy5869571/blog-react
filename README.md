@@ -59,8 +59,9 @@ ReactDOM.render(
 ### 目录结构
 <img src="http://img.qqzi.com/Content/Upload/2018/08/02/5f2045ec-633b-4f2c-b4a7-ac06b877af0a.png"  heigth="5%"/>
 
+### 管理端截图
+<img src="http://img.qqzi.com/Content/Upload/2018/08/02/96505143-cd22-4701-8723-d745cc9ff601.png"  heigth="5%"/>
+
 ### 博客截图
 <img src="http://img.qqzi.com/Content/Upload/2018/08/02/abc1ed51-16e3-410a-bad9-058310e3f553.png"  heigth="5%"/>
 
-### 管理端截图
-<img src="http://img.qqzi.com/Content/Upload/2018/08/02/96505143-cd22-4701-8723-d745cc9ff601.png"  heigth="5%"/>
