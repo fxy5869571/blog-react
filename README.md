@@ -1,17 +1,17 @@
 ## Apple的个人博客
 
+### 动机
+一直想学习下typescript的，趁着业余时间，于是就写了这个项目
 ### 技术栈
+前后端都基于typescript3.0
 
-```
-typescript + react + redux+ redux-saga + react-router + koa2
-```
+后端使用 koa2 提供一个简易的 http 服务器, 并将所有路由定位到入口 router/index.ts 处理. 使用 react-router分发接口, 后端 API 采用类似 Restful 风格的接口, 数据库是 MongoDB, , 权限控制采用 jwt token 的方式.目前只有两种全职，游客只有浏览的权限，管理员可以增删改查文章
+
+博客和管理端基于 react 框架, 使用 redux 和 redux-saga 统一处理数据, react-router 提供路由, ui 使用antd, 页面样式均使用 less 编写.
 
 ### 演示地址
 __[Apple的个人博客](http://132.232.34.190/)__
-
-### 管理端演示地址
-__[Apple的个人博客管理端](http://132.232.34.190/admin)__
-
+[Apple的个人博客管理端](http://132.232.34.190/admin)
 
 ## Usage
 
