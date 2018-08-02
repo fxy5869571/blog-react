@@ -39,8 +39,8 @@ class Article extends React.Component<IProps> {
   }
   public addCode = (content: string) => {
     return content
-      .replace('<pre>', '<pre><code>')
-      .replace('</pre>', '</code></pre>')
+      .replace(new RegExp('<pre>', 'g'), '<pre><code>')
+      .replace(new RegExp('</pre>', 'g'), '</code></pre>')
   }
   public render() {
     const {
