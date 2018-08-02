@@ -5,7 +5,7 @@
 ### 技术栈
 前后端都基于typescript3.0，使用tslint规范代码
 
-后端使用 koa2 提供一个简易的 http 服务器, 并将所有路由定位到入口 router/index.ts 处理. 使用 react-router分发接口, 后端 API 采用类似 Restful 风格的接口, 数据库是 MongoDB, , 权限控制采用 jwt token 的方式.目前只有两种全职，游客只有浏览的权限，管理员可以增删改查文章
+后端使用 koa2 提供一个简易的 http 服务器, 并将所有路由定位到入口 router/index.ts 处理. 使用 react-router分发接口, 后端 API 采用类似 Restful 风格的接口, 数据库是 MongoDB, , 权限控制采用 jwt token 的方式.目前只有两种权限，游客只有浏览的权限，管理员可以增删改查文章
 
 博客和管理端基于 react 框架, 使用 redux 和 redux-saga 统一处理数据, react-router 提供路由, ui 使用antd, 页面样式均使用 less 编写.
 
@@ -13,6 +13,11 @@
 __[Apple的个人博客](http://132.232.34.190/)__
 
 __[Apple的个人博客管理端](http://132.232.34.190/admin)__
+### 更新
+
+1.更新typescript 到3.0。
+
+2.解决服务器接口本地跨域的问题。
 
 ## Usage
 
@@ -52,3 +57,9 @@ ReactDOM.render(
 ```
 ### 目录结构
 <img src="http://img.qqzi.com/Content/Upload/2018/08/02/5f2045ec-633b-4f2c-b4a7-ac06b877af0a.png"  heigth="5%"/>
+
+### 博客截图
+<img src="http://img.qqzi.com/Content/Upload/2018/08/02/abc1ed51-16e3-410a-bad9-058310e3f553.png"  heigth="5%"/>
+
+### 管理端截图
+<img src="http://img.qqzi.com/Content/Upload/2018/08/02/96505143-cd22-4701-8723-d745cc9ff601.png"  heigth="5%"/>
