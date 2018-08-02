@@ -50,4 +50,4 @@ ReactDOM.render(
 )
 ```
 ### 目录结构
-<img src="http://img.qqzi.com/Content/Upload/2018/08/02/5f2045ec-633b-4f2c-b4a7-ac06b877af0a.png" width="50%" />
+<img src="http://img.qqzi.com/Content/Upload/2018/08/02/5f2045ec-633b-4f2c-b4a7-ac06b877af0a.png"  heigth="200"/>
