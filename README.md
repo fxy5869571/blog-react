@@ -23,7 +23,7 @@ cd blog-react
 
 yarn install
 ```
-###入口
+### 入口
 ```
 import { LocaleProvider } from 'antd'
 import zhCN from 'antd/lib/locale-provider/zh_CN'
@@ -48,5 +48,6 @@ ReactDOM.render(
   </LocaleProvider>,
   document.getElementById('root') as HTMLElement
 )
-
 ```
+### 目录结构
+<img src="https://img-blog.csdn.net/20151129213701642" width="50%" height="50%" />
