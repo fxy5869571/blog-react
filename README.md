@@ -69,4 +69,4 @@ ReactDOM.render(
 <img src="http://img.qqzi.com/Content/Upload/2018/08/02/abc1ed51-16e3-410a-bad9-058310e3f553.png"  heigth="5%"/>
 
 ### 求职
-求职react坑，深圳或者上海都行 邮箱：996276475@
+求职react坑，深圳或者上海都行 邮箱：996276475@qq.com
