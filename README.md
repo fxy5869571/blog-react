@@ -14,6 +14,9 @@ __[Apple的个人博客](http://132.232.34.190/)__
 
 __[Apple的个人博客管理端](http://132.232.34.190/admin)__
 
+### 顺便求个职
+求职react坑，深圳或者上海都行   简历：http://132.232.34.190/resume
+
 ### 更新
 
 1.更新typescript 到3.0。
@@ -68,5 +71,3 @@ ReactDOM.render(
 ### 博客截图
 <img src="http://img.qqzi.com/Content/Upload/2018/08/02/abc1ed51-16e3-410a-bad9-058310e3f553.png"  heigth="5%"/>
 
-### 求职
-求职react坑，深圳或者上海都行 邮箱：996276475@qq.com
