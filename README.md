@@ -10,12 +10,12 @@
 博客和管理端基于 react 框架, 使用 redux 和 redux-saga 统一处理数据, react-router 提供路由, ui 使用antd, 使用fetch请求后端数据.
 
 ### 演示地址
-__[Apple的个人博客](http://132.232.34.190/)__
+__[Apple的个人博客](http://fxyblog.com/)__
 
-__[Apple的个人博客管理端](http://132.232.34.190/admin)__
+__[Apple的个人博客管理端](http://fxyblog.com/admin)__
 
 ### 顺便求个职
-求职react坑，深圳或者上海都行   简历：http://132.232.34.190/resume
+求职react坑，深圳或者上海都行   简历：http://fxyblog.com/resume
 
 ### 更新
 
