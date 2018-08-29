@@ -14,9 +14,6 @@ __[Apple的个人博客](http://fxyblog.com/)__
 
 __[Apple的个人博客管理端](http://fxyblog.com/admin)__
 
-### 顺便求个职
-求职react坑，深圳或者上海都行   简历：http://fxyblog.com/resume
-
 ### 更新
 
 1.更新typescript 到3.0。
