@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { format } from '../../common'
 import { IPayload } from '../../types'
 import './style.less'
-interface IArticle {
+export interface IArticle {
   _id: string
   tag: ITag
   title: string

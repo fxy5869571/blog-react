@@ -1,11 +1,11 @@
 import { connect } from 'react-redux'
-import Article from '../components/Article/Article'
+import Article, { IArticle } from '../components/Article/Article'
 import { REQUEST_ARTICLE } from '../constants'
 
-interface IArticle {
-  article: object
+interface IArticles {
+  article: IArticle
 }
-const mapStateToProps = (state: IArticle): object => {
+const mapStateToProps = (state: IArticles): object => {
   return { article: state.article }
 }
 

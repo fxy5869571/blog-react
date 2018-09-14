@@ -4,7 +4,7 @@ import Highlight from 'react-highlight'
 import { format } from '../../common'
 import './highlight.less'
 import './style.less'
-interface IArticle {
+export interface IArticle {
   _id: string
   title: string
   create_at: string

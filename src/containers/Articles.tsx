@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Articles from '../components/Articles/Articles'
+import Articles, { IArticle } from '../components/Articles/Articles'
 import { REQUEST_ARTICLES } from '../constants'
 import { IPayload } from '../types'
 
@@ -7,7 +7,7 @@ interface IState {
   articles: IArticles
 }
 interface IArticles {
-  articles: object[]
+  articles: IArticle[]
   total: number
 }
 const mapStateToProps = (state: IState): object => ({

@@ -4,7 +4,7 @@ import * as React from 'react'
 
 import { format } from '../../common'
 import './style.less'
-interface ICollect {
+export interface ICollect {
   content?: string
   _id?: string
   create_at?: string
@@ -14,7 +14,7 @@ interface IState {
   collectItem: ICollect
   visible: boolean
 }
-interface IPayload {
+export interface IPayload {
   pageIndex: number
   pageSize: number
 }

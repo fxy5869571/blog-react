@@ -35,6 +35,6 @@
     "react-app-rewired": "^1.5.2",
     "ts-import-plugin": "^1.4.4",
     "react-app-rewire-less": "^2.1.1",
-    "typescript": "^3.0.0"
+    "typescript":"^3.0.3"
   }
 }

@@ -4,7 +4,7 @@ import * as React from 'react'
 import { Link } from 'react-router-dom'
 import { IPayload } from '../../types'
 import './style.less'
-interface IArticle {
+export interface IArticle {
   _id: string
   title: string
   create_at: string
