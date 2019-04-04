@@ -1,4 +1,4 @@
-## Apple的个人博客
+## Apple的个人博客  <img src="https://img.shields.io/badge/link-996.icu-red.svg"  heigth="5%"/>
 
 ### 动机
 一直想学习下typescript的，趁着业余时间，于是就写了这个博客0.0
@@ -69,4 +69,4 @@ ReactDOM.render(
 ### 博客截图
 <img src="http://img.qqzi.com/Content/Upload/2018/08/02/abc1ed51-16e3-410a-bad9-058310e3f553.png"  heigth="5%"/>
 
-<img src="https://img.shields.io/badge/link-996.icu-red.svg"  heigth="5%"/>
+
