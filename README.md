@@ -69,4 +69,4 @@ ReactDOM.render(
 ### 博客截图
 <img src="http://img.qqzi.com/Content/Upload/2018/08/02/abc1ed51-16e3-410a-bad9-058310e3f553.png"  heigth="5%"/>
 
-[！[ 996.icu ]（https://img.shields.io/badge/link-996.icu-red.svg）]（https://996.icu）
+<img src="https://img.shields.io/badge/link-996.icu-red.svg"  heigth="5%"/>
