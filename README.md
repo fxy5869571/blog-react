@@ -70,9 +70,6 @@ ReactDOM.render(
 <img src="http://img.qqzi.com/Content/Upload/2018/08/02/abc1ed51-16e3-410a-bad9-058310e3f553.png"  heigth="5%"/>
 
 ### 请我喝杯咖啡
-
-![image](http://img.qqzi.com/Content/Upload/2019/05/30/fba890ff-57e1-4f99-9589-da23ffb16ab0.jpeg?raw=true)
-![image](http://img.qqzi.com/Content/Upload/2019/05/30/b233949a-01c0-43b6-9136-fa55c3694435.jpeg?raw=true)
-
-
+ <img src="http://img.qqzi.com/Content/Upload/2019/05/30/fba890ff-57e1-4f99-9589-da23ffb16ab0.jpeg" width = "300" height = "200" alt="图片名称" align=center />
+  <img src="http://img.qqzi.com/Content/Upload/2019/05/30/fba890ff-57e1-4f99-9589-da23ffb16ab0.jpeg" width = "300" height = "200" alt="图片名称" align=center />
 
